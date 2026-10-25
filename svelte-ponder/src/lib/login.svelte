@@ -1,0 +1,62 @@
+<script lang="ts">
+    function loginHandler(event) {
+        console.log("Login successful!");
+    }
+</script>
+
+<form>
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email" placeholder="Email" ><br>
+    <label for="password">Password</label><br>
+    <input type="text" id="password" name="password" placeholder="Password"><br>
+    <button type="submit" onsubmit={loginHandler}>Log In</button>
+</form>
+
+<style>
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6rem;
+    }
+
+    form {
+        margin: 1.5rem 5rem;
+        padding: 1.5rem;
+        max-width: 64rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: var(--acccent-bg);
+    }
+
+    label {
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+
+    input {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        padding: 1.5rem;
+        padding: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        border-radius: 0.4rem;
+        justify-self: left;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        border-radius: 0.4rem;
+    }
+</style>
