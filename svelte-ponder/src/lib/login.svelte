@@ -1,6 +1,7 @@
 <script lang="ts">
-    function loginHandler(event) {
-        console.log("Login successful!");
+    function loginHandler(event: SubmitEvent) {
+        event.preventDefault();
+        console.log("Login successful");
     }
 </script>
 
@@ -18,11 +19,6 @@
     *::after {
         margin: 0;
         box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6rem;
     }
 
     form {
