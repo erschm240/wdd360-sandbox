@@ -47,13 +47,4 @@
         border-radius: 0.4rem;
         justify-self: left;
     }
-
-    button {
-        width: 100%;
-        margin-top: 1.5rem;
-        padding: 1.5rem;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 2px solid black;
-        border-radius: 0.4rem;
-    }
 </style>
